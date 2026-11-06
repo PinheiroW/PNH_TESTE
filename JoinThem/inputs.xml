@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modded_inputs>
+ <inputs>
+  <actions><input name="UAJoinThemSkin" loc="JoinThem: Skin survivor (hold)" /></actions>
+  <sorting name="JoinThem" loc="JoinThem"><input name="UAJoinThemSkin" /></sorting>
+ </inputs>
+ <preset><input name="UAJoinThemSkin"><btn name="mBRight" /></input></preset>
+</modded_inputs>

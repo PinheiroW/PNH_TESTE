@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Plague Night bindable inputs (AZ-2186). Registered by CfgMods > AZ_VampireMask > inputs in config.cpp.
+     Schema as in azo\az_signal\data\Inputs.xml (confirmed working in this game build). -->
+<modded_inputs>
+    <inputs>
+        <actions>
+            <input name="UAAZVampFangs" loc="Vampire: Bare / Hide Fangs" />
+            <input name="UAAZVampTie" loc="Vampire: bind hands" />
+            <input name="UAAZVampEarCycle" loc="Earplugs: cycle volume" />
+            <input name="UAAZVampReport" loc="Send a bug report or idea" />
+        </actions>
+        <sorting name="AZ_PLAGUENIGHT" loc="Plague Night">
+            <input name="UAAZVampFangs" />
+            <input name="UAAZVampTie" />
+            <input name="UAAZVampEarCycle" />
+            <input name="UAAZVampReport" />
+        </sorting>
+    </inputs>
+    <preset>
+        <input name="UAAZVampFangs">
+            <btn name="kJ" />
+        </input>
+        <input name="UAAZVampTie">
+            <btn name="kK" />
+        </input>
+        <input name="UAAZVampEarCycle">
+            <btn name="kN" />
+        </input>
+        <input name="UAAZVampReport">
+            <btn name="kF9" />
+        </input>
+    </preset>
+</modded_inputs>

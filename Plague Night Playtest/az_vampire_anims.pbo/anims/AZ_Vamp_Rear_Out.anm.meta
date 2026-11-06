@@ -1,0 +1,14 @@
+MetaFileClass {
+ Name "{4E6654DAC27B8ED6}azo/az_vampire_anims/anims/AZ_Vamp_Rear_Out.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "AZ_Vamp_Rear_Out.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

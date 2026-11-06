@@ -1,0 +1,14 @@
+MetaFileClass {
+ Name "{66109B6AF82A1B1A}azo/az_vampire_anims/anims/AZ_Vamp_Rear_In.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "AZ_Vamp_Rear_In.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

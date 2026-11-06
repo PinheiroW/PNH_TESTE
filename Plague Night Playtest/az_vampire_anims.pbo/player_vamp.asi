@@ -1,0 +1,33 @@
+$animsetinstance {
+ #template "{F0C651DE8E24A5DE}DZ/anims/workspaces/player/player_main/player_main.ast"
+ #nparents 1
+ #parent "{0F5E6205A5E823C3}DZ/anims/workspaces/player/player_main/player_main.asi"
+ $animations {
+   "ActionContinuous.CleanWoundTargetCro.In" "{C5D9F2328D67564F}azo/az_vampire_anims/anims/AZ_Vamp_Feed_In.anm"
+   "ActionContinuous.CleanWoundTargetCro.Loop" "{DCA8A33E289A272E}azo/az_vampire_anims/anims/AZ_Vamp_Feed_Loop.anm"
+   "ActionContinuous.CleanWoundTargetCro.Out" "{7A9E3AAC29F9FF70}azo/az_vampire_anims/anims/AZ_Vamp_Feed_Out.anm"
+   "ActionContinuous.CleanWoundTargetErc.In" "{C5D9F2328D67564F}azo/az_vampire_anims/anims/AZ_Vamp_Feed_In.anm"
+   "ActionContinuous.CleanWoundTargetErc.Loop" "{DCA8A33E289A272E}azo/az_vampire_anims/anims/AZ_Vamp_Feed_Loop.anm"
+   "ActionContinuous.CleanWoundTargetErc.Out" "{7A9E3AAC29F9FF70}azo/az_vampire_anims/anims/AZ_Vamp_Feed_Out.anm"
+   "ActionContinuous.SalineBloodBagTargetCro.In" "{B455B0D2ABC699A3}azo/az_vampire_anims/anims/AZ_Vamp_Victim_In.anm"
+   "ActionContinuous.SalineBloodBagTargetCro.Loop" "{2E2B7EB5CEEC0895}azo/az_vampire_anims/anims/AZ_Vamp_Victim_Loop.anm"
+   "ActionContinuous.SalineBloodBagTargetCro.Out" "{C46EB0747A928AFD}azo/az_vampire_anims/anims/AZ_Vamp_Victim_Out.anm"
+   "ActionContinuous.SalineBloodBagTargetErc.In" "{B455B0D2ABC699A3}azo/az_vampire_anims/anims/AZ_Vamp_Victim_In.anm"
+   "ActionContinuous.SalineBloodBagTargetErc.Loop" "{2E2B7EB5CEEC0895}azo/az_vampire_anims/anims/AZ_Vamp_Victim_Loop.anm"
+   "ActionContinuous.SalineBloodBagTargetErc.Out" "{C46EB0747A928AFD}azo/az_vampire_anims/anims/AZ_Vamp_Victim_Out.anm"
+   "ActionContinuous.BuildRopeLadderCro.In" "{69C98B3BA248FF72}azo/az_vampire_anims/anims/AZ_Vamp_Drain_In.anm"
+   "ActionContinuous.BuildRopeLadderCro.Loop" "{B457F361387BB86E}azo/az_vampire_anims/anims/AZ_Vamp_Drain_Loop.anm"
+   "ActionContinuous.BuildRopeLadderCro.Out" "{8B328D7348668802}azo/az_vampire_anims/anims/AZ_Vamp_Drain_Out.anm"
+   "ActionContinuous2.WashFaceWellErc.In" "{66109B6AF82A1B1A}azo/az_vampire_anims/anims/AZ_Vamp_Rear_In.anm"
+   "ActionContinuous2.WashFaceWellErc.Loop" "{C7B23A90158BE3C0}azo/az_vampire_anims/anims/AZ_Vamp_Rear_Loop.anm"
+   "ActionContinuous2.WashFaceWellErc.Out" "{4E6654DAC27B8ED6}azo/az_vampire_anims/anims/AZ_Vamp_Rear_Out.anm"
+   "ActionContinuous.SalineBloodBagCro.In" "{2F15FF93B8032AA3}azo/az_vampire_anims/anims/AZ_Vamp_RearVictim_In.anm"
+   "ActionContinuous.SalineBloodBagCro.Loop" "{2C208615CF058F14}azo/az_vampire_anims/anims/AZ_Vamp_RearVictim_Loop.anm"
+   "ActionContinuous.SalineBloodBagCro.Out" "{419182EEB449F9D4}azo/az_vampire_anims/anims/AZ_Vamp_RearVictim_Out.anm"
+   "ActionContinuous.SalineBloodBagErc.In" "{2F15FF93B8032AA3}azo/az_vampire_anims/anims/AZ_Vamp_RearVictim_In.anm"
+   "ActionContinuous.SalineBloodBagErc.Loop" "{2C208615CF058F14}azo/az_vampire_anims/anims/AZ_Vamp_RearVictim_Loop.anm"
+   "ActionContinuous.SalineBloodBagErc.Out" "{419182EEB449F9D4}azo/az_vampire_anims/anims/AZ_Vamp_RearVictim_Out.anm"
+   "GestureOnce.TauntKissCro.Once" "{1F6FAA73A6FFB9A8}azo/az_vampire_anims/anims/AZ_Vamp_Snarl_Cro.anm"
+   "GestureOnce.TauntKissErc.Once" "{EBBE2F5BEE96F5C0}azo/az_vampire_anims/anims/AZ_Vamp_Snarl_Erc.anm"
+ }
+}

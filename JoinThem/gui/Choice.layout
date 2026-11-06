@@ -1,0 +1,64 @@
+PanelWidgetClass JoinThemRoot
+{
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ priority 10000
+ {
+  PanelWidgetClass ChoicePanel
+  {
+   position 0 0
+   size 540 230
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   color 0.04 0.04 0.04 0.96
+   {
+    TextWidgetClass Title
+    {
+     position 20 24
+     size 500 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "Choose your next life"
+     font "gui/fonts/sdf_MetronBook18"
+     "text halign" center
+    }
+    ButtonWidgetClass JoinButton
+    {
+     position 30 110
+     size 220 60
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "Join Them?"
+     font "gui/fonts/sdf_MetronBook18"
+    }
+    ButtonWidgetClass RespawnButton
+    {
+     position 290 110
+     size 220 60
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "Respawn"
+     font "gui/fonts/sdf_MetronBook18"
+    }
+   }
+  }
+ }
+}
+
+

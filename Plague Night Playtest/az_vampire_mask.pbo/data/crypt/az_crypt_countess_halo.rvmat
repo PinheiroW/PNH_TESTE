@@ -1,0 +1,9 @@
+// AZ-2240 r6 halo round the eye glints (build_overlays.py): self-lit soft red, alpha from the _ca falloff
+ambient[]={1,1,1,1};
+diffuse[]={1,1,1,1};
+forcedDiffuse[]={0,0,0,0};
+emmisive[]={0.7,0.09,0.05,1};
+specular[]={0,0,0,0};
+specularPower=1;
+PixelShaderID="Normal";
+VertexShaderID="Basic";

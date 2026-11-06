@@ -1,0 +1,205 @@
+FrameWidgetClass AZ_VampLoadRoot {
+ ignorepointer 1
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  ImageWidgetClass AZ_VampLoadBg {
+   visible 1
+   ignorepointer 1
+   position 0 0
+   size 0.16 0.09
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   fixaspect outside
+   mode blend
+   "src alpha" 0
+   "stretch mode" stretch_w_h
+   filter 1
+  }
+  PanelWidgetClass AZ_VampLoadShade {
+   ignorepointer 1
+   color 0 0 0 0.55
+   position 0 0
+   size 1 0.16
+   halign center_ref
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style rover_sim_colorable
+   {
+    TextWidgetClass AZ_VampLoadCredit {
+     ignorepointer 1
+     color 0.85 0.8 0.8 0.85
+     position 40 18
+     size 900 22
+     halign left_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "Plague Night by OlipollyZ"
+     font "gui/fonts/sdf_MetronLight24"
+     "exact text" 1
+     "exact text size" 18
+     "text halign" left
+     "text valign" center
+    }
+    TextWidgetClass AZ_VampLoadFeedback {
+     ignorepointer 1
+     color 1 1 1 1
+     position 40 18
+     size 400 22
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "Discord: azaleamap.com/discord"
+     font "gui/fonts/sdf_MetronLight24"
+     "exact text" 1
+     "exact text size" 18
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+  TextWidgetClass AZ_VampLoadTitleShadow {
+   ignorepointer 1
+   color 0 0 0 0.85
+   position 104 74
+   size 1000 110
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "PLAGUE NIGHT"
+   font "gui/fonts/AmorSerifPro-Bold"
+   "exact text" 1
+   "exact text size" 88
+   "text valign" center
+  }
+  TextWidgetClass AZ_VampLoadTitle {
+   ignorepointer 1
+   color 0.78 0.04 0.04 1
+   position 100 70
+   size 1000 110
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "PLAGUE NIGHT"
+   font "gui/fonts/AmorSerifPro-Bold"
+   "exact text" 1
+   "exact text size" 88
+   "text valign" center
+  }
+  TextWidgetClass AZ_VampLoadSub {
+   ignorepointer 1
+   color 0.85 0.8 0.8 0.85
+   position 106 176
+   size 1000 32
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "SURVIVE UNTIL DAWN"
+   font "gui/fonts/sdf_MetronLight24"
+   "exact text" 1
+   "exact text size" 22
+   "text valign" center
+  }
+  TextWidgetClass AZ_VampLoadEarly {
+   ignorepointer 1
+   color 0.9 0.25 0.22 0.95
+   position 106 214
+   size 1200 30
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "EARLY ACCESS - WORK IN PROGRESS"
+   font "gui/fonts/sdf_MetronLight24"
+   "exact text" 1
+   "exact text size" 22
+   "text valign" center
+  }
+  TextWidgetClass AZ_VampLoadTip {
+   ignorepointer 1
+   color 0.92 0.86 0.86 1
+   position 0 120
+   size 0.8 34
+   halign center_ref
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   text ""
+   font "gui/fonts/sdf_MetronLight24"
+   "exact text" 1
+   "exact text size" 24
+   "text halign" center
+   "text valign" center
+  }
+  PanelWidgetClass AZ_VampLoadBarTrack {
+   ignorepointer 1
+   color 1 1 1 0.15
+   position 0 94
+   size 600 3
+   halign center_ref
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+  }
+  ProgressBarWidgetClass AZ_VampLoadBar {
+   ignorepointer 1
+   color 0.8 0.05 0.05 1
+   position 0 94
+   size 600 3
+   halign center_ref
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Loading
+   current 0
+   vertical 0
+  }
+  TextWidgetClass AZ_VampLoadNote {
+   ignorepointer 1
+   color 0.86 0.8 0.8 0.72
+   position 0 60
+   size 0.8 26
+   halign center_ref
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   text ""
+   font "gui/fonts/sdf_MetronLight24"
+   "exact text" 1
+   "exact text size" 18
+   "text halign" center
+   "text valign" center
+  }
+ }
+}

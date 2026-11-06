@@ -1,0 +1,10 @@
+[
+	{ "m_Headline": "Sunlight", "m_ImagePath": "", "m_Description": "Vampires burn in the sun. Hide under a roof before dawn." },
+	{ "m_Headline": "The cure", "m_ImagePath": "", "m_Description": "A blood transfusion of at least 250 ml cures the bitten, if it comes before the fever runs out." },
+	{ "m_Headline": "Heartbeat", "m_ImagePath": "", "m_Description": "Hungry vampires hear your heartbeat. Silence will not hide you." },
+	{ "m_Headline": "Bare your fangs", "m_ImagePath": "", "m_Description": "Throat slit: bare your fangs." },
+	{ "m_Headline": "Red eyes", "m_ImagePath": "", "m_Description": "A fed vampire looks human. Red eyes and fangs mean that one is hungry." },
+	{ "m_Headline": "Bitten", "m_ImagePath": "", "m_Description": "Bite marks, fever and coughing: find a blood bag before the sickness turns you." },
+	{ "m_Headline": "Human food", "m_ImagePath": "", "m_Description": "Vampires cannot keep human food down. Watch who refuses to eat." },
+	{ "m_Headline": "Night hunters", "m_ImagePath": "", "m_Description": "At night, gunfire can leave vampires down but alive. Finish them with a stake." }
+]

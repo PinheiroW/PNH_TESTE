@@ -1,0 +1,37 @@
+EffectDef {
+ Emitors {
+  EmitorDef drips {
+   ShapeType Box
+   ShapeSize 0.06 0 0.06
+   ConeAngle 0 0 0
+   MaxNum 8
+   BirthRate 1.2
+   BirthRateRND 0.8
+   Material "{2884C61C9A35471E}Graphics/Particles/materials/character/fluid_thick_01.emat"
+   SizeMultiplier 0.025
+   SizeRND 0.005
+   StretchMultiplier 1
+   RandomAngle 0
+   Sort 0
+   Velocity 0
+   GravityMultiply 1.2
+   Wind 0
+   AnimOnce 1
+   AnimFPS 30
+   RandomFrame 0
+   LifeTime 0.7
+   LifeTimeRND 0.2
+   Color {
+    0 0.3 0 0 1 0.22 0 0
+   }
+   Alpha {
+    0 0 0.1 1 0.9 1 1 0
+   }
+   Size {
+    0 0.6 1 1
+   }
+   EffectTime 1
+   Repeat 1
+  }
+ }
+}

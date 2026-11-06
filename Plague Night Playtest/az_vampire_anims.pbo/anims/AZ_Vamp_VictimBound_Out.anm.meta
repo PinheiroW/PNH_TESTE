@@ -1,0 +1,14 @@
+MetaFileClass {
+ Name "{47FC6E8CB46AE156}azo/az_vampire_anims/anims/AZ_Vamp_VictimBound_Out.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "AZ_Vamp_VictimBound_Out.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

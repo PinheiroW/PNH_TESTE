@@ -1,0 +1,14 @@
+MetaFileClass {
+ Name "{8B328D7348668802}azo/az_vampire_anims/anims/AZ_Vamp_Drain_Out.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "AZ_Vamp_Drain_Out.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

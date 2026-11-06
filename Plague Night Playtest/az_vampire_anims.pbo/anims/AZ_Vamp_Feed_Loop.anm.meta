@@ -1,0 +1,14 @@
+MetaFileClass {
+ Name "{DCA8A33E289A272E}azo/az_vampire_anims/anims/AZ_Vamp_Feed_Loop.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "AZ_Vamp_Feed_Loop.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

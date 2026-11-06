@@ -1,0 +1,68 @@
+FrameWidgetClass AZ_VampMoon {
+ visible 1
+ ignorepointer 1
+ position 0 0
+ size 50 35
+ halign right_ref
+ valign bottom_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  ImageWidgetClass AZ_VampMoonIcon {
+   visible 1
+   ignorepointer 1
+   color 1 1 1 1
+   position 0 0
+   size 35 35
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   image0 "azo/az_vampire_mask/gui/textures/az_vamp_fullmoon_ca.paa"
+   image1 "azo/az_vampire_mask/gui/textures/az_vamp_sun_ca.paa"
+   mode blend
+   "src alpha" 1
+   "clamp mode" clamp
+   filter 1
+   stretch 1
+  }
+  FrameWidgetClass AZ_VampMoonFillClip {
+   visible 0
+   ignorepointer 1
+   clipchildren 1
+   position 7.5 35
+   size 35 0
+   halign left_ref
+   valign top_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   {
+    ImageWidgetClass AZ_VampMoonFill {
+     visible 1
+     ignorepointer 1
+     color 1 0.8 0.16 0.16
+     position 0 0
+     size 35 35
+     halign left_ref
+     valign top_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "azo/az_vampire_mask/gui/textures/az_vamp_fullmoon_ca.paa"
+     mode blend
+     "src alpha" 1
+     "clamp mode" clamp
+     filter 1
+     stretch 1
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,721 @@
+AnimSetInstanceSource {
+ Template "{0F9B2A38DA6C0C92}DZ/anims/workspaces/infected/infected_main/infected.ast"
+ ParentTemplates {
+ }
+ Lines {
+  AnimSetInstanceSource_Line "Attack.Center.Attack Left Heavy" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Center.Attack Left Light" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Center.Attack Right Heavy" {
+   Resource "{74D57264B2884ACB}DZ/anims/anm/player/actions/environment/p_erc_door_open.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Center.Attack Right Light" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Down.Attack Left Heavy" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Down.Attack Left Light" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Down.Attack Right Heavy" {
+   Resource "{74D57264B2884ACB}DZ/anims/anm/player/actions/environment/p_erc_door_open.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Down.Attack Right Light" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Down.Crawl Attack" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Down.Crawl Attack Combo" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Down.Crawl Attack Run" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Run.Attack Left Heavy" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Run.Attack Left Light" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Run.Attack Right Heavy" {
+   Resource "{74D57264B2884ACB}DZ/anims/anm/player/actions/environment/p_erc_door_open.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Run.Attack Right Light" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Up.Attack Left Light" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Up.Attack Right Light" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Up.Crawl Attack" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack.Up.Crawl Attack Combo" {
+   Resource "{D903F5E3D2B8E2CD}DZ/anims/anm/player/attacks/1hd/knife/p_erc_knife_attackL_inplace_03_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Attack Door.Charge.Attack Door Charge 01" {
+   Resource "{74D57264B2884ACB}DZ/anims/anm/player/actions/environment/p_erc_door_open.anm"
+  }
+  AnimSetInstanceSource_Line "Attack Door.Charge.Attack Door Charge 02" {
+   Resource "{74D57264B2884ACB}DZ/anims/anm/player/actions/environment/p_erc_door_open.anm"
+  }
+  AnimSetInstanceSource_Line "Attack Door.Erc.Attack Door Head" {
+   Resource "{74D57264B2884ACB}DZ/anims/anm/player/actions/environment/p_erc_door_open.anm"
+  }
+  AnimSetInstanceSource_Line "Attack Door.Erc.Attack Door Kick" {
+   Resource "{74D57264B2884ACB}DZ/anims/anm/player/actions/environment/p_erc_door_open.anm"
+  }
+  AnimSetInstanceSource_Line "Attack Door.Erc.Attack Door LR 01" {
+   Resource "{74D57264B2884ACB}DZ/anims/anm/player/actions/environment/p_erc_door_open.anm"
+  }
+  AnimSetInstanceSource_Line "Attack Door.Erc.Attack Door LR 02" {
+   Resource "{74D57264B2884ACB}DZ/anims/anm/player/actions/environment/p_erc_door_open.anm"
+  }
+  AnimSetInstanceSource_Line "Attack Door.Erc.Attack Door Push" {
+   Resource "{74D57264B2884ACB}DZ/anims/anm/player/actions/environment/p_erc_door_open.anm"
+  }
+  AnimSetInstanceSource_Line "Attack Door.Erc.Attack Door Shoulder L" {
+   Resource "{74D57264B2884ACB}DZ/anims/anm/player/actions/environment/p_erc_door_open.anm"
+  }
+  AnimSetInstanceSource_Line "Attack Door.Erc.Attack Door Shoulder R" {
+   Resource "{74D57264B2884ACB}DZ/anims/anm/player/actions/environment/p_erc_door_open.anm"
+  }
+  AnimSetInstanceSource_Line "Crawl.A.Death" {
+   Resource "{92D79B4E8B3F5608}DZ/anims/anm/infected/moves/crawl/z_crwl_death.anm"
+  }
+  AnimSetInstanceSource_Line "Crawl.A.Hit Back" {
+   Resource "{D164D2E34A455D44}DZ/anims/anm/infected/hits/z_hit_crawl_light_B.anm"
+  }
+  AnimSetInstanceSource_Line "Crawl.A.Hit Forward" {
+   Resource "{4FBD912B3124D617}DZ/anims/anm/infected/hits/z_hit_crawl_light_F.anm"
+  }
+  AnimSetInstanceSource_Line "Crawl.A.Hit Left" {
+   Resource "{DEEB2641874828C2}DZ/anims/anm/infected/hits/z_hit_crawl_light_L.anm"
+  }
+  AnimSetInstanceSource_Line "Crawl.A.Hit Right" {
+   Resource "{2FE01E15F4171D2E}DZ/anims/anm/infected/hits/z_hit_crawl_light_R.anm"
+  }
+  AnimSetInstanceSource_Line "Crawl.A.z_crwl_idle01" {
+   Resource "{147156D1A704AB5F}DZ/anims/anm/infected/moves/crawl/z_crwl_idle01.anm"
+  }
+  AnimSetInstanceSource_Line "Crawl.A.z_crwl_idle02" {
+   Resource "{8D6FEF48BAE39ACF}DZ/anims/anm/infected/moves/crawl/z_crwl_idle02.anm"
+  }
+  AnimSetInstanceSource_Line "Crawl.A.z_crwl_runF" {
+   Resource "{C833724B20B4D695}DZ/anims/anm/infected/moves/crawl/z_crwl_runF.anm"
+  }
+  AnimSetInstanceSource_Line "Crawl.A.z_crwl_walkF" {
+   Resource "{E1FF422B42ECEFA3}DZ/anims/anm/infected/moves/crawl/z_crwl_walkF.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Fast.Death Back" {
+   Resource "Humans/anims/private/death_fast_back.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Fast.Death Front" {
+   Resource "Humans/anims/private/death_fast_front.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Fast.Death Left" {
+   Resource "Humans/anims/private/death_fast_left.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Fast.Death Right" {
+   Resource "Humans/anims/private/death_fast_right.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Idle.Death Back" {
+   Resource "Humans/anims/private/death_body_back.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Idle.Death Front" {
+   Resource "Humans/anims/private/death_body_front.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Idle.Death Left" {
+   Resource "Humans/anims/private/death_body_left.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Idle.Death Right" {
+   Resource "Humans/anims/private/death_body_right.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Idle.Death_Stealth_Liver" {
+   Resource "{3FE9E3B3C911A585}DZ/anims/anm/infected/death/z_death_stealth_liver.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Idle.Death_Stealth_Neck" {
+   Resource "{0C47B785E0C85821}DZ/anims/anm/infected/death/z_death_stealth_neck.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Run.Death Back" {
+   Resource "Humans/anims/private/death_body_back.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Run.Death Front" {
+   Resource "Humans/anims/private/death_body_front.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Run.Death Left" {
+   Resource "Humans/anims/private/death_body_left.anm"
+  }
+  AnimSetInstanceSource_Line "Death.Run.Death Right" {
+   Resource "Humans/anims/private/death_body_right.anm"
+  }
+  AnimSetInstanceSource_Line "Default.Normal.Knuckle Run" {
+   Resource "Humans/anims/private/injured_walk_brisk.anm"
+  }
+  AnimSetInstanceSource_Line "Default.Normal.Knuckle Trans" {
+   Resource "{7EBED8946A6B3053}DZ/anims/anm/player/moves/unarmed/injured/p_erc_inj_idle_low.anm"
+  }
+  AnimSetInstanceSource_Line "Default.Normal.LookAt Crawl" {
+   Resource "{6BA7BBDA7133BDB1}DZ/anims/anm/infected/moves/crawl/z_crawl_lookAt.anm"
+  }
+  AnimSetInstanceSource_Line "Default.Normal.LookAt Erc" {
+   Resource "{975AC96F5D5997D6}DZ/anims/anm/infected/moves/erected/z_erc_lookAt.anm"
+  }
+  AnimSetInstanceSource_Line "Default.Normal.LookAt Move" {
+   Resource "{C223F3ABEA6C6F03}DZ/anims/anm/infected/moves/crawl/z_erc_MoveLookAt.anm"
+  }
+  AnimSetInstanceSource_Line "Default.Normal.LookAt Move Crawl" {
+   Resource "{20FF991DDB11A618}DZ/anims/anm/infected/moves/crawl/z_crawl_MoveLookAt.anm"
+  }
+  AnimSetInstanceSource_Line "Default.Normal.zA_erc_lookat_gradual" {
+   Resource "{45C5DDAD64B5DF01}DZ/anims/anm/infected/moves/erected/zA_erc_lookat_gradual.anm"
+  }
+  AnimSetInstanceSource_Line "Default.Normal.zAggroLookAt" {
+   Resource "{4EB48DB9A16F4ABF}DZ/anims/anm/infected/moves/erected/zAggro_erc_lookAt.anm"
+  }
+  AnimSetInstanceSource_Line "Default.Normal.z_erc_attack_up_combo03" {
+   Resource "{F7A0975C960D0134}DZ/anims/anm/infected/attacks/erected/z_erc_attack_up_combo03.anm"
+  }
+  AnimSetInstanceSource_Line "Default.Normal.z_erc_idle_fight01" {
+   Resource "{7EBED8946A6B3053}DZ/anims/anm/player/moves/unarmed/injured/p_erc_inj_idle_low.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Belly_B" {
+   Resource "{611E7F4524873194}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_B.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Belly_F" {
+   Resource "{FFC73C8D5FE6BAC7}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_F.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Belly_L" {
+   Resource "{6E918BE7E98A4412}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_L.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Belly_R" {
+   Resource "{9F9AB3B39AD571FE}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_R.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Body_B" {
+   Resource "{611E7F4524873194}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_B.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Body_F" {
+   Resource "{FFC73C8D5FE6BAC7}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_F.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Body_L" {
+   Resource "{6E918BE7E98A4412}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_L.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Body_R" {
+   Resource "{9F9AB3B39AD571FE}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_R.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Foot_LB" {
+   Resource "{611E7F4524873194}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_B.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Foot_LF" {
+   Resource "{FFC73C8D5FE6BAC7}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_F.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Foot_RB" {
+   Resource "{611E7F4524873194}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_B.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Foot_RF" {
+   Resource "{FFC73C8D5FE6BAC7}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_F.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Head_B" {
+   Resource "{611E7F4524873194}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_B.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Head_F" {
+   Resource "{FFC73C8D5FE6BAC7}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_F.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Head_L" {
+   Resource "{6E918BE7E98A4412}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_L.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Heavy.Hit_Head_R" {
+   Resource "{9F9AB3B39AD571FE}DZ/anims/anm/player/hits/Heavy/p_erc_hit_heavy_R.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Knuckle.Hit_Body_B" {
+   Resource "{AA9D44D1648B8265}DZ/anims/anm/infected/hits/z_knuckle_body_lightB01.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Knuckle.Hit_Body_F" {
+   Resource "{72BE249A4BECD5E0}DZ/anims/anm/infected/hits/z_knuckle_body_lightF01.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Knuckle.Hit_Body_L" {
+   Resource "{4D61C537FF8EFCF2}DZ/anims/anm/infected/hits/z_knuckle_body_lightL01.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Knuckle.Hit_Body_R" {
+   Resource "{0D01E7C1232887C4}DZ/anims/anm/infected/hits/z_knuckle_body_lightR01.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Light.Hit_Belly_B" {
+   Resource "{4363B043AC7EFD29}DZ/anims/anm/player/hits/Light/p_erc_hit_light_B.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Light.Hit_Belly_F" {
+   Resource "{DDBAF38BD71F767A}DZ/anims/anm/player/hits/Light/p_erc_hit_light_F.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Light.Hit_Belly_L" {
+   Resource "{4CEC44E1617388AF}DZ/anims/anm/player/hits/Light/p_erc_hit_light_L.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Light.Hit_Belly_R" {
+   Resource "{BDE77CB5122CBD43}DZ/anims/anm/player/hits/Light/p_erc_hit_light_R.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Light.Hit_Body_B" {
+   Resource "{4363B043AC7EFD29}DZ/anims/anm/player/hits/Light/p_erc_hit_light_B.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Light.Hit_Body_F" {
+   Resource "{DDBAF38BD71F767A}DZ/anims/anm/player/hits/Light/p_erc_hit_light_F.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Light.Hit_Body_L" {
+   Resource "{4CEC44E1617388AF}DZ/anims/anm/player/hits/Light/p_erc_hit_light_L.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Light.Hit_Body_R" {
+   Resource "{BDE77CB5122CBD43}DZ/anims/anm/player/hits/Light/p_erc_hit_light_R.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Light.Hit_Head_B" {
+   Resource "{4363B043AC7EFD29}DZ/anims/anm/player/hits/Light/p_erc_hit_light_B.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Light.Hit_Head_F" {
+   Resource "{DDBAF38BD71F767A}DZ/anims/anm/player/hits/Light/p_erc_hit_light_F.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Light.Hit_Head_L" {
+   Resource "{4CEC44E1617388AF}DZ/anims/anm/player/hits/Light/p_erc_hit_light_L.anm"
+  }
+  AnimSetInstanceSource_Line "Hits.Light.Hit_Head_R" {
+   Resource "{BDE77CB5122CBD43}DZ/anims/anm/player/hits/Light/p_erc_hit_light_R.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarA.AggroToAlert" {
+   Resource "Humans/anims/sleep/layingdown_in.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarA.Idle01" {
+   Resource "Humans/anims/sleep/layingdown_loop.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarA.Idle02" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarA.Idle03" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarA.Idle04" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarA.Idle05" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarA.IdleAggro" {
+   Resource "{D1E73C8777B61205}DZ/anims/anm/player/moves/rifles/p_rfl_erc_idle_low.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarA.IdleToAlert" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarA.ToAggro" {
+   Resource "Humans/anims/sleep/layingdown_out.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarB.AggroToAlert" {
+   Resource "Humans/anims/private/SitACro_in.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarB.Idle01" {
+   Resource "Humans/anims/private/SitACro_loop.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarB.Idle02" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarB.Idle03" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarB.Idle04" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarB.Idle05" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarB.IdleAggro" {
+   Resource "{7AE8E2AC118A8000}DZ/anims/anm/player/moves/rifles/p_rfl_cro_idle_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarB.IdleToAlert" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarB.ToAggro" {
+   Resource "Humans/anims/private/SitACro_out.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarC.AggroToAlert" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarC.Idle01" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarC.Idle02" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarC.Idle03" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarC.Idle04" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarC.Idle05" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarC.IdleAggro" {
+   Resource "{9CEE778735FD0AB4}DZ/anims/anm/player/moves/rifles/p_rfl_erc_idle_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarC.IdleToAlert" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarC.ToAggro" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarD.AggroToAlert" {
+   Resource "{807CD6307D9EF981}DZ/anims/anm/player/unconscious/unarmed/p_erc_idle_to_unconscious.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarD.Idle01" {
+   Resource "{234B3A87C6ED4E2E}DZ/anims/anm/player/unconscious/unarmed/p_unconscious_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarD.Idle02" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarD.Idle03" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarD.Idle04" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarD.Idle05" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarD.IdleAggro" {
+   Resource "{B0AD4527AE8F1161}DZ/anims/anm/infected/moves/erected/zAggro_erc_Idle01.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarD.IdleToAlert" {
+   Resource "{60E64E4E7AA14F60}DZ/anims/anm/player/moves/unarmed/p_erc_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Idles.VarD.ToAggro" {
+   Resource "Humans/anims/sleep/layingdown_out.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarA.RunF" {
+   Resource "{2B0EC0B9A43163EE}DZ/anims/anm/player/moves/rifles/p_rfl_erc_runF_low.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarA.SprintF" {
+   Resource "{F639733C413C63CE}DZ/anims/anm/player/moves/rifles/p_rfl_erc_sprintF_low.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarA.SprintFL" {
+   Resource "{E4C4858C9D79FEB9}DZ/anims/anm/player/moves/rifles/p_rfl_erc_sprintFL_low.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarA.SprintFR" {
+   Resource "{880A2F5D092F9FDD}DZ/anims/anm/player/moves/rifles/p_rfl_erc_sprintFR_low.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarA.WalkF" {
+   Resource "{E067232DA3F4ED1C}DZ/anims/anm/player/moves/rifles/p_rfl_erc_walkF_low.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarB.RunF" {
+   Resource "{80011E92C20DF1EB}DZ/anims/anm/player/moves/rifles/p_rfl_cro_runF_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarB.SprintF" {
+   Resource "{80011E92C20DF1EB}DZ/anims/anm/player/moves/rifles/p_rfl_cro_runF_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarB.SprintFL" {
+   Resource "{67DB07FBF2217E32}DZ/anims/anm/player/moves/rifles/p_rfl_cro_runFL_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarB.SprintFR" {
+   Resource "{0B15AD2A66771F56}DZ/anims/anm/player/moves/rifles/p_rfl_cro_runFR_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarB.WalkF" {
+   Resource "{87ACF0B17D3E9E68}DZ/anims/anm/player/moves/rifles/p_rfl_cro_walkF_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarC.RunF" {
+   Resource "{66078BB9E67A7B5F}DZ/anims/anm/player/moves/rifles/p_rfl_erc_runF_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarC.SprintF" {
+   Resource "{BB30383C03777B7F}DZ/anims/anm/player/moves/rifles/p_rfl_erc_sprintF_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarC.SprintFL" {
+   Resource "{A9CDCE8CDF32E608}DZ/anims/anm/player/moves/rifles/p_rfl_erc_sprintFL_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarC.SprintFR" {
+   Resource "{C503645D4B64876C}DZ/anims/anm/player/moves/rifles/p_rfl_erc_sprintFR_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarC.WalkF" {
+   Resource "{AD6E682DE1BFF5AD}DZ/anims/anm/player/moves/rifles/p_rfl_erc_walkF_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarD.RunF" {
+   Resource "{B709A1BFCE210BB4}DZ/anims/anm/infected/moves/erected/zD_erc_runF.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarD.SprintF" {
+   Resource "{E2E5748359FCBF38}DZ/anims/anm/infected/moves/erected/zD_erc_sprintF.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarD.SprintFL" {
+   Resource "{BC849461FAC020C4}DZ/anims/anm/infected/moves/erected/zD_erc_sprintFL.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarD.SprintFR" {
+   Resource "{4D8FAC35899F1528}DZ/anims/anm/infected/moves/erected/zD_erc_sprintFR.anm"
+  }
+  AnimSetInstanceSource_Line "Locomotions.VarD.WalkF" {
+   Resource "{B72AB52364860F69}DZ/anims/anm/infected/moves/erected/zD_erc_walkF.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.Crawl.180L" {
+   Resource "{5E4478EEFF4C4FCE}DZ/anims/anm/infected/moves/crawl/z_crwl_turnL_180.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.Crawl.180R" {
+   Resource "{328AD23F6B1A2EAA}DZ/anims/anm/infected/moves/crawl/z_crwl_turnR_180.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.Crawl.90L" {
+   Resource "{7B06D706E9801F23}DZ/anims/anm/infected/moves/crawl/z_crwl_turnL_90.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.Crawl.90R" {
+   Resource "{C12123CFA597080C}DZ/anims/anm/infected/moves/crawl/z_crwl_turnR_90.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.180L" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.180L Aggro" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.180L Aggro Fast" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.180L Fast" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.180L Run" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.180R" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.180R Aggro" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.180R Aggro Fast" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.180R Fast" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.180R Run" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.90L" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.90L Aggro" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.90L Aggro Fast" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.90L Fast" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.90L Run" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.90R" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.90R Aggro" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.90R Aggro Fast" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.90R Fast" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarA.90R Run" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.180L" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.180L Aggro" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.180L Aggro Fast" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.180L Fast" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.180L Run" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.180R" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.180R Aggro" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.180R Aggro Fast" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.180R Fast" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.180R Run" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.90L" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.90L Aggro" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.90L Aggro Fast" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.90L Fast" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.90L Run" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.90R" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.90R Aggro" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.90R Aggro Fast" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.90R Fast" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarB.90R Run" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.180L" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.180L Aggro" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.180L Aggro Fast" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.180L Fast" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.180L Run" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.180R" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.180R Aggro" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.180R Aggro Fast" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.180R Fast" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.180R Run" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.90L" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.90L Aggro" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.90L Aggro Fast" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.90L Fast" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.90L Run" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.90R" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.90R Aggro" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.90R Aggro Fast" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.90R Fast" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarC.90R Run" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.180L" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.180L Aggro" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.180L Aggro Fast" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.180L Fast" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.180L Run" {
+   Resource "{89A651FEE0BC7CB8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.180R" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.180R Aggro" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.180R Aggro Fast" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.180R Fast" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.180R Run" {
+   Resource "{8809625417EC6FA8}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_180_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.90L" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.90L Aggro" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.90L Aggro Fast" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.90L Fast" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.90L Run" {
+   Resource "{15E5086B92F39A38}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnL_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.90R" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.90R Aggro" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.90R Aggro Fast" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.90R Fast" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Turn.VarD.90R Run" {
+   Resource "{D851FDF4C928B97D}DZ/anims/anm/player/moves/unarmed/turns/p_erc_turnR_90_low.anm"
+  }
+  AnimSetInstanceSource_Line "Vault.A.Vault 110cm" {
+   Resource "{D91C21D639E8D6D1}DZ/anims/anm/infected/moves/obstacles/z_obstacle_110cm.anm"
+  }
+  AnimSetInstanceSource_Line "Vault.A.Vault 160cm" {
+   Resource "{900F7BB21A2769FA}DZ/anims/anm/infected/moves/obstacles/z_obstacle_160cm.anm"
+  }
+  AnimSetInstanceSource_Line "Vault.A.Vault 210cm" {
+   Resource "{D702659E041FD90B}DZ/anims/anm/infected/moves/obstacles/z_obstacle_210cm.anm"
+  }
+  AnimSetInstanceSource_Line "Vault.A.Vault 50cm" {
+   Resource "{C5E4F7EB98F96BC1}DZ/anims/anm/infected/moves/obstacles/z_obstacle_50cm.anm"
+  }
+  AnimSetInstanceSource_Line "Vault.A.Vault 50cm Inplace" {
+   Resource "{9E579E044D9665A6}DZ/anims/anm/infected/moves/obstacles/z_obstacle_50cm_inplace.anm"
+  }
+ }
+}

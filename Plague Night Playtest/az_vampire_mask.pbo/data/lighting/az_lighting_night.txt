@@ -1,0 +1,758 @@
+// Plague Night night lighting (AZ, lightingConfig 225; lighting owner 10-22, Oliver's GO). A copy of Namalsk's
+// lighting_namalsk_bright.txt (223) with only the night side changed: a near-black starry sky over cool-neutral, readable
+// moonlit ground (Oliver's Esseker reference: sky 0-3 luma, ground 20-42). C_Night/C_Astro1-3/C_Nautical1-2 and
+// O_Night/O_Astro1/O_Nautical1 edited; civil twilight and day are byte-identical to 223. Night light keeps only a slight cool hint (blue/red ~1.27, Oliver 10-22: readability over colour); run 2 (10-22): ambient ~3x, moon ~2x after run 1 left the ground at 8-11 luma; the moon halo (skyAroundSun) and sky/stars stay as run 1. Run 4 (Oliver 10-22: readable like Nasdara but keep Namalsk's look; lifted colours flatten the map): light colours back to 223's exactly, so 225 = 223 + a near-black sky + vanilla's exposure. Exposure is the brightness lever, not the colours (auto exposure normalises them: vanilla's night colours are ~4x dimmer than these yet it renders brighter). Night/astro/nautical take vanilla's exposure target desiredLuminanceCoef 0.12 (Namalsk 223 has 0.0-0.05) with vanilla's EVMax 0 at night (run 3's EVMax 0.5 lifted a sky-only frame to luma 46).
+#define UNUSED_PARAMS \
+
+
+class LightingNew
+{
+	class Default
+	{
+		// used 
+		height = 0;										// altitude in meters for which this settings applies
+		overcast = 0.5;									// overcast value for which this settings applies
+		sunAngle = 90;									// angle of sun or moon
+		sunOrMoon = 1;									// defines the switch between sun and moon
+		diffuse[] = {{1, 0.87, 0.85}, 13.8};			// facing global light (sun / moon)
+		diffuseCloud[] = {{1, 0.87, 0.85}, 13.8};
+		bidirect[] = {0.08, 0.08, 0.07};				// opposite of diffuse
+		bidirectCloud[] = {0.08, 0.08, 0.07};
+		ambient[] = {{0.12, 0.18, 0.32}, 11.8};			// shadows (top to down)
+		ambientCloud[] = {{0.12, 0.18, 0.32}, 11.8};
+		groundReflection[] = {0.0, 0.0, 0.0};			// illumination from ground (bottom to up)
+		groundReflectionCloud[] = {0.0, 0.0, 0.0};
+		sky[] = {{0.5, 0.64, 1}, 12.6};					// also affects color of the fog (which is also affected by first line in sky texture)
+		skyAroundSun[] = {{1.0, 1.0, 1.0}, 13.0};		// halo around sun / moon
+		desiredLuminanceCoef = 0.72;					// brightness of the scene
+		desiredLuminanceCoefCloud = 0.72;
+		EVMin = -2.0;									// scene gets darker with higher value
+		EVMax = 0.5;									// scene gets brigther with higher value
+		filmGrainIntensity = 0.0;						// intensity of filmgrain (applied to dark pixels)
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+
+		// un-used
+		luminanceRectCoef = 0.0;
+		luminanceRectCoefCloud = 0.0;
+		rayleigh[] = {0.0, 0.0, 0.0};
+		mie[] = {0.0, 0.0, 0.0};
+		cloudsColor[] = {0.0, 0.0, 0.0};
+		swBrightness = 0;
+	};
+
+	// CLEAR SET
+	class C_Night: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = -18;
+		sunOrMoon = 0.0;
+		diffuse[] = {0.1, 0.150, 0.3};
+		diffuseCloud[] = {0.1, 0.150, 0.3};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.032,0.06,0.096};
+		ambientCloud[] = {0.032,0.06,0.096};
+		groundReflection[] = {0.004, 0.0072, 0.012};
+		groundReflectionCloud[] = {0.004, 0.0072, 0.012};
+		sky[] = {0.004, 0.005, 0.008};
+		skyAroundSun[] = {0.018, 0.028, 0.043};
+		desiredLuminanceCoef = 0.12;
+		desiredLuminanceCoefCloud = 0.12;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.6;
+		atmosphereIntensity = 0.2;
+		starsIntensity = 0.6;
+	};
+
+	// astro
+	class C_Astro1: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = -17;
+		sunOrMoon = 0.5;
+		diffuse[] = {0.0, 0.0, 0.0};
+		diffuseCloud[] = {0.0, 0.0, 0.0};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.008, 0.0158, 0.024};
+		ambientCloud[] = {0.008, 0.0158, 0.024};
+		groundReflection[] = {0.004, 0.0072, 0.012};
+		groundReflectionCloud[] = {0.004, 0.0072, 0.012};
+		sky[] = {0.006, 0.008, 0.012};
+		skyAroundSun[] = {0.018, 0.028, 0.043};
+		desiredLuminanceCoef = 0.12;
+		desiredLuminanceCoefCloud = 0.12;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.6;
+		atmosphereIntensity = 0.3;
+		starsIntensity = 0.5;
+	};
+	class C_Astro2: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = -16;
+		sunOrMoon = 1.0;
+		diffuse[] = {0.0, 0.0, 0.0};
+		diffuseCloud[] = {0.0, 0.0, 0.0};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.032, 0.0632, 0.096};
+		ambientCloud[] = {0.032, 0.0632, 0.096};
+		groundReflection[] = {0.004, 0.0072, 0.012};
+		groundReflectionCloud[] = {0.004, 0.0072, 0.012};
+		sky[] = {0.01, 0.014, 0.021};
+		skyAroundSun[] = {0.018, 0.028, 0.043};
+		desiredLuminanceCoef = 0.12;
+		desiredLuminanceCoefCloud = 0.12;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.6;
+		atmosphereIntensity = 0.4;
+		starsIntensity = 0.4;
+	};
+	class C_Astro3: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = -14;
+		sunOrMoon = 1.0;
+		diffuse[] = {0.0, 0.0, 0.0};
+		diffuseCloud[] = {0.0, 0.0, 0.0};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.032, 0.0632, 0.096};
+		ambientCloud[] = {0.032, 0.0632, 0.096};
+		groundReflection[] = {0.004, 0.0072, 0.012};
+		groundReflectionCloud[] = {0.004, 0.0072, 0.012};
+		sky[] = {0.013, 0.019, 0.029};
+		skyAroundSun[] = {0.018, 0.028, 0.043};
+		desiredLuminanceCoef = 0.12;
+		desiredLuminanceCoefCloud = 0.12;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.6;
+		atmosphereIntensity = 0.4;
+		starsIntensity = 0.33;
+	};
+
+	// nautical
+	class C_Nautical1: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = -12;
+		sunOrMoon = 1.0;
+		diffuse[] = {0.0, 0.0, 0.0};
+		diffuseCloud[] = {0.0, 0.0, 0.0};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.064, 0.1264, 0.192};
+		ambientCloud[] = {0.064, 0.1264, 0.192};
+		groundReflection[] = {0.016, 0.0288, 0.048};
+		groundReflectionCloud[] = {0.016, 0.0288, 0.048};
+		sky[] = {0.018, 0.028, 0.043};
+		skyAroundSun[] = {0.018, 0.028, 0.043};
+		desiredLuminanceCoef = 0.12;
+		desiredLuminanceCoefCloud = 0.12;
+		EVMin = -2.0;
+		EVMax = 0.5;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.5;
+		atmosphereIntensity = 0.5;
+		starsIntensity = 0.255;
+	};
+	class C_Nautical2: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = -10;
+		sunOrMoon = 1.0;
+		diffuse[] = {0, 0, 0};
+		diffuseCloud[] = {0, 0, 0};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.064, 0.1264, 0.192};
+		ambientCloud[] = {0.064, 0.1264, 0.192};
+		groundReflection[] = {0.016, 0.0288, 0.048};
+		groundReflectionCloud[] = {0.016, 0.0288, 0.048};
+		sky[] = {0.018, 0.028, 0.043};
+		skyAroundSun[] = {0.150, 0.075, 0.13};
+		desiredLuminanceCoef = 0.12;
+		desiredLuminanceCoefCloud = 0.12;
+		EVMin = -2.0;
+		EVMax = 0.5;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.3;
+		atmosphereIntensity = 0.7;
+		starsIntensity = 0.255;
+	};
+	class C_Nautical3: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = -8;
+		sunOrMoon = 1.0;
+		diffuse[] = {0, 0, 0};
+		diffuseCloud[] = {0, 0, 0};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.128, 0.2528, 0.384};
+		ambientCloud[] = {0.128, 0.2528, 0.384};
+		groundReflection[] = {0.032, 0.0572, 0.096};
+		groundReflectionCloud[] = {0.032, 0.0572, 0.096};
+		sky[] = {0.018, 0.028, 0.043};
+		skyAroundSun[] = {0.3039, 0.152, 0.2709};
+		desiredLuminanceCoef = 0.12;
+		desiredLuminanceCoefCloud = 0.12;
+		EVMin = -2.0;
+		EVMax = 0.5;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.2;
+		atmosphereIntensity = 0.8;
+		starsIntensity = 0.255;
+	};
+
+	// civil
+	class C_Civil1: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = -6;
+		sunOrMoon = 1.0;
+		diffuse[] = {0, 0, 0};
+		diffuseCloud[] = {0, 0, 0};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.128, 0.2528, 0.384};
+		ambientCloud[] = {0.128, 0.2528, 0.384};
+		groundReflection[] = {0.032, 0.0572, 0.096};
+		groundReflectionCloud[] = {0.032, 0.0572, 0.096};
+		sky[] = {{0.3, 0.225, 0.327}, -3};
+		skyAroundSun[] = {0.6039, 0.3, 0.4509};
+		desiredLuminanceCoef = 0.10;
+		desiredLuminanceCoefCloud = 0.10;
+		EVMin = -2.0;
+		EVMax = 0.5;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.1;
+		atmosphereIntensity = 0.9;
+		starsIntensity = 0.255;
+	};
+	class C_Civil2: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = -4;
+		sunOrMoon = 1.0;
+		diffuse[] = {0, 0, 0};
+		diffuseCloud[] = {0, 0, 0};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.128, 0.2528, 0.384};
+		ambientCloud[] = {0.128, 0.2528, 0.384};
+		groundReflection[] = {0.032, 0.0572, 0.096};
+		groundReflectionCloud[] = {0.032, 0.0572, 0.096};
+		sky[] = {{0.6, 0.549, 0.745}, -1.5};
+		skyAroundSun[] = {{0.75, 0.3, 0.4509}, 0.5};
+		desiredLuminanceCoef = 0.20;
+		desiredLuminanceCoefCloud = 0.20;
+		EVMin = -2.0;
+		EVMax = 0.2;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.255;
+	};
+	class C_Civil3: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = -2;
+		sunOrMoon = 1.0;
+		diffuse[] = {0, 0, 0};
+		diffuseCloud[] = {0, 0, 0};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.2, 0.23, 0.45};
+		ambientCloud[] = {0.2, 0.23, 0.45};
+		groundReflection[] = {0.032, 0.0572, 0.096};
+		groundReflectionCloud[] = {0.032, 0.0572, 0.096};
+		sky[] = {{0.6, 0.549, 0.745}, -1.5};
+		skyAroundSun[] = {{1, 0.3, 0.25}, 1};
+		desiredLuminanceCoef = 0.25;
+		desiredLuminanceCoefCloud = 0.25;
+		EVMin = -2.0;
+		EVMax = 0.2;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.255;
+	};
+
+	// day
+	class C_Day0: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = 0;
+		sunOrMoon = 1.0;
+		diffuse[] = {0, 0, 0};
+		diffuseCloud[] = {0, 0, 0};
+		bidirect[] = {0.03, 0.03, 0.03};
+		bidirectCloud[] = {0.03, 0.03, 0.03};
+		ambient[] = {0.2, 0.23, 0.45};
+		ambientCloud[] = {0.2, 0.23, 0.45};
+		groundReflection[] = {0.032, 0.0572, 0.096};
+		groundReflectionCloud[] = {0.032, 0.0572, 0.096};
+		sky[] = {{2.0, 0.99, 0.9}, -1};
+		skyAroundSun[] = {{2.0, 0.4211, 0.15}, 0.2};
+		desiredLuminanceCoef = 0.42;
+		desiredLuminanceCoefCloud = 0.42;
+		EVMin = -2.0;
+		EVMax = 0.1;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+	class C_Day4: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = 4;
+		sunOrMoon = 1;
+		diffuse[] = {{1.5, 0.604, 0.2}, 4};
+		diffuseCloud[] = {{1.5, 0.604, 0.2}, 4};
+		bidirect[] = {0.03, 0.03, 0.03};
+		bidirectCloud[] = {0.03, 0.03, 0.03};
+		ambient[] = {{0.12, 0.18, 0.32}, 4};
+		ambientCloud[] = {{0.12, 0.18, 0.32}, 4};
+		groundReflection[] = {{0.2, 0.23, 0.45}, 1.4};
+		groundReflectionCloud[] = {{0.2, 0.23, 0.45}, 1.4};
+		sky[] = {{2.0, 0.99, 0.9}, 5};
+		skyAroundSun[] = {{2.0, 0.8, 0.3}, 7};
+		desiredLuminanceCoef = 0.48;
+		desiredLuminanceCoefCloud = 0.48;
+		EVMin = -2.0;
+		EVMax = 0.1;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+	class C_Day8: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = 8;
+		sunOrMoon = 1;
+		diffuse[] = {{1.0, 0.604, 0.4}, 10.4};
+		diffuseCloud[] = {{1.0, 0.604, 0.4}, 10.4};
+		bidirect[] = {0.03, 0.03, 0.03};
+		bidirectCloud[] = {0.03, 0.03, 0.03};
+		ambient[] = {{0.12, 0.18, 0.32}, 9.4};
+		ambientCloud[] = {{0.12, 0.18, 0.32}, 9.4};
+		groundReflection[] = {{0.12, 0.18, 0.32}, 7.4};
+		groundReflectionCloud[] = {{0.12, 0.18, 0.32}, 7.4};
+		sky[] = {{1.4, 0.99, 0.9}, 10.4};
+		skyAroundSun[] = {{1.0, 0.874, 0.494}, 11};
+		desiredLuminanceCoef = 0.6;
+		desiredLuminanceCoefCloud = 0.6;
+		EVMin = -2.0;
+		EVMax = 0.1;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+	class C_Day12: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = 12;
+		sunOrMoon = 1;
+		diffuse[] = {{1.0, 0.64, 0.31}, 11.4};
+		diffuseCloud[] = {{1.0, 0.64, 0.31}, 11.4};
+		bidirect[] = {0.03, 0.03, 0.03};
+		bidirectCloud[] = {0.03, 0.03, 0.03};
+		ambient[] = {{0.12, 0.18, 0.32}, 10.6};
+		ambientCloud[] = {{0.12, 0.18, 0.32}, 10.6};
+		groundReflection[] = {{0.12, 0.18, 0.32}, 8.1};
+		groundReflectionCloud[] = {{0.12, 0.18, 0.32}, 8.1};
+		sky[] = {{0.5, 0.64, 1}, 10.8};
+		skyAroundSun[] = {{1.0, 0.874, 0.494}, 11.4};
+		desiredLuminanceCoef = 0.64;
+		desiredLuminanceCoefCloud = 0.64;
+		EVMin = -2.0;
+		EVMax = 0.1;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+	class C_Day16: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = 16;
+		sunOrMoon = 1;
+		diffuse[] = {{1, 0.87, 0.85}, 11.8};
+		diffuseCloud[] = {{1, 0.87, 0.85}, 11.8};
+		bidirect[] = {0.08, 0.08, 0.07};
+		bidirectCloud[] = {0.08, 0.08, 0.07};
+		ambient[] = {{0.12, 0.18, 0.32}, 10.4};
+		ambientCloud[] = {{0.12, 0.18, 0.32}, 10.4};
+		groundReflection[] = {{0.12, 0.18, 0.32}, 8.1};
+		groundReflectionCloud[] = {{0.12, 0.18, 0.32}, 8.1};
+		sky[] = {{0.5, 0.64, 1}, 11.0};
+		skyAroundSun[] = {{1.0, 1.0, 1.0}, 11.2};
+		desiredLuminanceCoef = 0.66;
+		desiredLuminanceCoefCloud = 0.66;
+		EVMin = -2.0;
+		EVMax = 0.1;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+	class C_Day35: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = 35;
+		sunOrMoon = 1;
+		diffuse[] = {{1, 0.87, 0.85}, 12.8};
+		diffuseCloud[] = {{1, 0.87, 0.85}, 12.8};
+		bidirect[] = {0.08, 0.08, 0.07};
+		bidirectCloud[] = {0.08, 0.08, 0.07};
+		ambient[] = {{0.12, 0.18, 0.32}, 11.0};
+		ambientCloud[] = {{0.12, 0.18, 0.32}, 11.0};
+		groundReflection[] = {{0.12, 0.18, 0.32}, 8.0};
+		groundReflectionCloud[] = {{0.12, 0.18, 0.32}, 8.0};
+		sky[] = {{0.7, 0.84, 1}, 11.7};
+		skyAroundSun[] = {{1.0, 1.0, 1.0}, 12.5};
+		desiredLuminanceCoef = 0.70;
+		desiredLuminanceCoefCloud = 0.70;
+		EVMin = -2.0;
+		EVMax = 0.2;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+	class C_Day60: Default
+	{
+		height = 0;
+		overcast = 0.35;
+		sunAngle = 60;
+		sunOrMoon = 1;
+		diffuse[] = {{1, 0.87, 0.85}, 13.8};
+		diffuseCloud[] = {{1, 0.87, 0.85}, 13.8};
+		bidirect[] = {0.08, 0.08, 0.07};
+		bidirectCloud[] = {0.08, 0.08, 0.07};
+		ambient[] = {{0.12, 0.18, 0.32}, 11.8};
+		ambientCloud[] = {{0.12, 0.18, 0.32}, 11.8};
+		groundReflection[] = {{0.12, 0.18, 0.324}, 7.8};
+		groundReflectionCloud[] = {{0.12, 0.18, 0.32}, 7.8};
+		sky[] = {{0.7, 0.84, 1}, 12.6};
+		skyAroundSun[] = {{1.0, 1.0, 1.0}, 13.0};
+		desiredLuminanceCoef = 0.72;
+		desiredLuminanceCoefCloud = 0.72;
+		EVMin = -2.0;
+		EVMax = 0.2;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+
+
+
+	// OVERCAST SET
+	class O_Night: Default
+	{
+		height = 0;
+		overcast = 0.65;
+		sunAngle = -18;
+		sunOrMoon = 0.0;
+		diffuse[] = {0.0, 0.0, 0.0};
+		diffuseCloud[] = {0.0, 0.0, 0.0};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.036, 0.057, 0.085};
+		ambientCloud[] = {0.036, 0.057, 0.085};
+		groundReflection[] = {0.0, 0.0, 0.0};
+		groundReflectionCloud[] = {0.0, 0.0, 0.0};
+		sky[] = {0.006, 0.006, 0.006};
+		skyAroundSun[] = {0.012, 0.012, 0.012};
+		desiredLuminanceCoef = 0.12;
+		desiredLuminanceCoefCloud = 0.12;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.255;
+	};
+	class O_Astro1: Default
+	{
+		height = 0;
+		overcast = 0.65;
+		sunAngle = -17;
+		sunOrMoon = 0.5;
+		diffuse[] = {0.036, 0.057, 0.085};
+		diffuseCloud[] = {0.036, 0.057, 0.085};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.036, 0.057, 0.085};
+		ambientCloud[] = {0.036, 0.057, 0.085};
+		groundReflection[] = {0.0, 0.0, 0.0};
+		groundReflectionCloud[] = {0.0, 0.0, 0.0};
+		sky[] = {0.036, 0.056, 0.087};
+		skyAroundSun[] = {0.036, 0.056, 0.087};
+		desiredLuminanceCoef = 0.12;
+		desiredLuminanceCoefCloud = 0.12;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.255;
+	};
+	class O_Nautical1: Default
+	{
+		height = 0;
+		overcast = 0.65;
+		sunAngle = -12;
+		sunOrMoon = 1.0;
+		diffuse[] = {0.036, 0.057, 0.085};
+		diffuseCloud[] = {0.036, 0.057, 0.085};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.036, 0.057, 0.085};
+		ambientCloud[] = {0.036, 0.057, 0.085};
+		groundReflection[] = {0.0, 0.0, 0.0};
+		groundReflectionCloud[] = {0.0, 0.0, 0.0};
+		sky[] = {0.036, 0.056, 0.087};
+		skyAroundSun[] = {0.1011, 0.1063, 0.0926};
+		desiredLuminanceCoef = 0.12;
+		desiredLuminanceCoefCloud = 0.12;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.255;
+	};
+	class O_Civil1: Default
+	{
+		height = 0;
+		overcast = 0.65;
+		sunAngle = -6;
+		sunOrMoon = 1;
+		diffuse[] = {0.018, 0.018, 0.018};
+		diffuseCloud[] = {0.018, 0.018, 0.018};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.1, 0.18, 0.29};
+		ambientCloud[] = {0.1, 0.18, 0.29};
+		groundReflection[] = {0.0, 0.0, 0.0};
+		groundReflectionCloud[] = {0.0, 0.0, 0.0};
+		sky[] = {0.1, 0.14, 0.22};
+		skyAroundSun[] = {0.1, 0.14, 0.22};
+		desiredLuminanceCoef = 0.0;
+		desiredLuminanceCoefCloud = 0.0;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.255;
+	};
+	class O_Civil2: Default
+	{
+		height = 0;
+		overcast = 0.65;
+		sunAngle = -2;
+		sunOrMoon = 1;
+		diffuse[] = {0.018, 0.018, 0.018};
+		diffuseCloud[] = {0.018, 0.018, 0.018};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.145, 0.227, 0.349};
+		ambientCloud[] = {0.145, 0.227, 0.349};
+		groundReflection[] = {0.0, 0.0, 0.0};
+		groundReflectionCloud[] = {0.0, 0.0, 0.0};
+		sky[] = {0.1, 0.14, 0.22};
+		skyAroundSun[] = {0.1, 0.14, 0.22};
+		desiredLuminanceCoef = 0.05;
+		desiredLuminanceCoefCloud = 0.05;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.255;
+	};
+	class O_Day0: Default
+	{
+		height = 0;
+		overcast = 0.65;
+		sunAngle = 0;
+		sunOrMoon = 1;
+		diffuse[] = {0.27, 0.27, 0.27};
+		diffuseCloud[] = {0.27, 0.27, 0.27};
+		bidirect[] = {0.0, 0.0, 0.0};
+		bidirectCloud[] = {0.0, 0.0, 0.0};
+		ambient[] = {0.145, 0.227, 0.349};
+		ambientCloud[] = {0.145, 0.227, 0.349};
+		groundReflection[] = {0.0, 0.0, 0.0};
+		groundReflectionCloud[] = {0.0, 0.0, 0.0};
+		sky[] = {0.1, 0.14, 0.16};
+		skyAroundSun[] = {0.1, 0.14, 0.16};
+		desiredLuminanceCoef = 0.30;
+		desiredLuminanceCoefCloud = 0.30;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+	class O_Day4: Default
+	{
+		height = 0;
+		overcast = 0.65;
+		sunAngle = 4;
+		sunOrMoon = 1;
+		diffuse[] = {{0.27, 0.27, 0.29}, 4.4};
+		diffuseCloud[] = {{0.27, 0.27, 0.29}, 4.4};
+		bidirect[] = {0.13, 0.13, 0.13};
+		bidirectCloud[] = {0.13, 0.13, 0.13};
+		ambient[] = {{0.145, 0.227, 0.349}, 5.4};
+		ambientCloud[] = {{0.145, 0.227, 0.349}, 5.4};
+		groundReflection[] = {0.0, 0.0, 0.0};
+		groundReflectionCloud[] = {0.0, 0.0, 0.0};
+		sky[] = {{1.0, 1.0, 1.0}, 6.415};
+		skyAroundSun[] = {{1.0, 1.0, 1.0}, 6.799};
+		desiredLuminanceCoef = 0.40;
+		desiredLuminanceCoefCloud = 0.40;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+	class O_Day8: Default
+	{
+		height = 0;
+		overcast = 0.65;
+		sunAngle = 8;
+		sunOrMoon = 1;
+		diffuse[] = {{0.27, 0.27, 0.30}, 7.4};
+		diffuseCloud[] = {{0.27, 0.27, 0.30}, 7.4};
+		bidirect[] = {0.13, 0.13, 0.13};
+		bidirectCloud[] = {0.13, 0.13, 0.13};
+		ambient[] = {{0.145, 0.227, 0.349}, 8.1};
+		ambientCloud[] = {{0.145, 0.227, 0.349}, 8.1};
+		groundReflection[] = {0.0, 0.0, 0.0};
+		groundReflectionCloud[] = {0.0, 0.0, 0.0};
+		sky[] = {{1.0, 1.0, 1.0}, 8.0};
+		skyAroundSun[] = {{1.0, 1.0, 1.0}, 8.8};
+		desiredLuminanceCoef = 0.45;
+		desiredLuminanceCoefCloud = 0.45;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+	class O_Day12: Default
+	{
+		height = 0;
+		overcast = 0.65;
+		sunAngle = 12;
+		sunOrMoon = 1;
+		diffuse[] = {{0.27, 0.27, 0.30}, 8.2};
+		diffuseCloud[] = {{0.27, 0.27, 0.30}, 8.2};
+		bidirect[] = {0.13, 0.13, 0.13};
+		bidirectCloud[] = {0.13, 0.13, 0.13};
+		ambient[] = {{0.145, 0.227, 0.349}, 10.1};
+		ambientCloud[] = {{0.145, 0.227, 0.349}, 10.1};
+		groundReflection[] = {0.0, 0.0, 0.0};
+		groundReflectionCloud[] = {0.0, 0.0, 0.0};
+		sky[] = {{1.0, 1.0, 1.0}, 9.0};
+		skyAroundSun[] = {{1.0, 1.0, 1.0}, 9.8};
+		desiredLuminanceCoef = 0.53;
+		desiredLuminanceCoefCloud = 0.53;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+	class O_Day35: Default
+	{
+		height = 0;
+		overcast = 0.65;
+		sunAngle = 35;
+		sunOrMoon = 1;
+		diffuse[] = {{0.27, 0.27, 0.30}, 9.4};
+		diffuseCloud[] = {{0.27, 0.27, 0.30}, 9.4};
+		bidirect[] = {0.23, 0.23, 0.23};
+		bidirectCloud[] = {0.23, 0.23, 0.23};
+		ambient[] = {{0.15, 0.20, 0.25}, 11.1};
+		ambientCloud[] = {{0.15, 0.20, 0.25}, 11.1};
+		groundReflection[] = {0.0, 0.0, 0.0};
+		groundReflectionCloud[] = {0.0, 0.0, 0.0};
+		sky[] = {{1, 1, 1}, 11};
+		skyAroundSun[] = {{1, 1, 1}, 11.8};
+		desiredLuminanceCoef = 0.58;
+		desiredLuminanceCoefCloud = 0.58;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+	class O_Day60: Default
+	{
+		height = 0;
+		overcast = 0.65;
+		sunAngle = 60;
+		sunOrMoon = 1;
+		diffuse[] = {{0.27, 0.27, 0.30}, 10.4};
+		diffuseCloud[] = {{0.27, 0.27, 0.30}, 10.4};
+		bidirect[] = {0.33, 0.33, 0.33};
+		bidirectCloud[] = {0.33, 0.33, 0.33};
+		ambient[] = {{0.20, 0.24, 0.29}, 12.4};
+		ambientCloud[] = {{0.20, 0.24, 0.29}, 12.4};
+		groundReflection[] = {0.0, 0.0, 0.0};
+		groundReflectionCloud[] = {0.0, 0.0, 0.0};
+		sky[] = {{1, 1, 1}, 12};
+		skyAroundSun[] = {{1, 1, 1}, 12.8};
+		desiredLuminanceCoef = 0.60;
+		desiredLuminanceCoefCloud = 0.60;
+		EVMin = -2.0;
+		EVMax = 0.0;
+		filmGrainIntensity = 0.0;
+		spaceIntensity = 0.0;
+		atmosphereIntensity = 1.0;
+		starsIntensity = 0.0;
+	};
+};

@@ -1,0 +1,105 @@
+EffectDef {
+ Emitors {
+  EmitorDef burst_drops {
+   ShapeType Sphere
+   ShapeSize 0.6 0 0
+   ConeAngle 360 0 180
+   MaxNum 220
+   BirthRate 1400
+   Material "{2884C61C9A35471E}Graphics/Particles/materials/character/fluid_thick_01.emat"
+   SizeMultiplier 0.11
+   SizeRND 0.06
+   StretchMultiplier 1
+   RandomAngle 1
+   Sort 0
+   Velocity 6.5
+   VelocityRND 3
+   AirResistance 0.8
+   GravityMultiply 2
+   Wind 0
+   AnimOnce 1
+   AnimFPS 30
+   RandomFrame 0
+   LifeTime 1.3
+   LifeTimeRND 0.4
+   Color {
+    0 0.5 0.03 0.01 1 0.24 0 0
+   }
+   Alpha {
+    0 0 0.03 1 0.8 1 1 0
+   }
+   Size {
+    0 0.4 0.15 1 1 1
+   }
+   EffectTime 0.15
+   Repeat 0
+   BRateMast {
+    0 1 0.6 1 1 0
+   }
+  }
+  EmitorDef burst_blobs {
+   ShapeType Sphere
+   ShapeSize 0.4 0 0
+   ConeAngle 360 0 180
+   MaxNum 40
+   BirthRate 300
+   Material "{2884C61C9A35471E}Graphics/Particles/materials/character/fluid_thick_01.emat"
+   SizeMultiplier 0.32
+   SizeRND 0.12
+   RandomAngle 1
+   Sort 0
+   Velocity 3
+   VelocityRND 1.2
+   AirResistance 1.2
+   GravityMultiply 1.6
+   Wind 0
+   AnimOnce 1
+   AnimFPS 30
+   RandomFrame 0
+   LifeTime 1.5
+   LifeTimeRND 0.4
+   Color {
+    0 0.38 0.01 0.01 1 0.2 0 0
+   }
+   Alpha {
+    0 0 0.05 1 0.8 1 1 0
+   }
+   Size {
+    0 0.5 0.2 1 1 1.1
+   }
+   EffectTime 0.12
+   Repeat 0
+  }
+  EmitorDef burst_mist {
+   ShapeType Sphere
+   ShapeSize 0.8 0 0
+   ConeAngle 360 0 180
+   MaxNum 16
+   BirthRate 110
+   Material "{0105FA7C517744F7}graphics/Particles/materials/smoke/smoke_cloud_01_b.emat"
+   SizeMultiplier 2.2
+   SizeRND 0.8
+   RandomRotDir 1
+   RotMultiplier 0.4
+   Sort 0
+   Velocity 1.6
+   VelocityRND 0.6
+   AirResistance 2
+   GravityMultiply 0.05
+   Wind 0
+   LifeTime 2.6
+   LifeTimeRND 0.6
+   Color {
+    0 0.45 0.02 0.02 1 0.2 0 0
+   }
+   Alpha {
+    0 0 0.08 0.65 0.5 0.35 1 0
+   }
+   Size {
+    0 0.5 0.3 1 1 1.6
+   }
+   EffectTime 0.1
+   Repeat 0
+  }
+ }
+}

@@ -1,0 +1,44 @@
+FrameWidgetClass HumanTrader {
+ position 0.02 0.04 size 0.96 0.92
+ hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0
+ {
+  ImageWidgetClass leftArt { position 0 0 size 0.32 0.795 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 color 1 1 1 1 image0 "Humans/gui/textures/trader_left_ca.paa" stretch 1 mode blend "src alpha" 1 }
+  ImageWidgetClass rightArt { position 0.68 0 size 0.32 0.795 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 color 1 1 1 1 image0 "Humans/gui/textures/trader_right_ca.paa" stretch 1 mode blend "src alpha" 1 }
+  ImageWidgetClass FooterArt { position 0 0.81 size 1 0.19 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 color 1 1 1 1 image0 "Humans/gui/textures/trader_footer_ca.paa" stretch 1 mode blend "src alpha" 1 }
+  TextWidgetClass Title { position 0.025 0.03 size 0.27 0.055 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 text "STRANGE TRADER" font "gui/fonts/sdf_MetronBook24" "exact text" 1 "exact text size" 24 color 0.83 0.73 0.52 1 }
+  TextWidgetClass ShopLabel { position 0.025 0.09 size 0.27 0.04 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 text "STOCK / PRICE / QUANTITY" font "gui/fonts/sdf_MetronBook24" "exact text" 1 "exact text size" 16 color 0.7 0.72 0.7 1 }
+  TextWidgetClass InventoryLabel { position 0.695 0.03 size 0.27 0.055 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 text "YOUR INVENTORY" font "gui/fonts/sdf_MetronBook24" "exact text" 1 "exact text size" 24 color 0.83 0.73 0.52 1 }
+  TextWidgetClass SellLabel { position 0.695 0.09 size 0.27 0.04 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 text "YOUR ITEMS / SALE VALUE" font "gui/fonts/sdf_MetronBook24" "exact text" 1 "exact text size" 16 color 0.7 0.72 0.7 1 }
+  TextListboxWidgetClass Stock { position 0.025 0.145 size 0.27 0.5 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 font "gui/fonts/sdf_MetronBook18" }
+  TextListboxWidgetClass Inventory { position 0.695 0.145 size 0.27 0.5 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 font "gui/fonts/sdf_MetronBook18" }
+  TextWidgetClass SellValue { position 0.695 0.66 size 0.27 0.04 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 text "Sell value: --" font "gui/fonts/sdf_MetronBook24" "exact text" 1 "exact text size" 20 color 0.83 0.73 0.52 1 }
+  ButtonWidgetClass Buy {  position 0.025 0.72 size 0.27 0.055 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 visible 1 text ""    
+   {
+    PanelWidgetClass BuySurface { position 0 0 size 1 1 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 color 0.14 0.12 0.085 0.96 style DayZDefaultPanel }
+    TextWidgetClass BuyCaption { position 0.02 0.1 size 0.96 0.8 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 text "BUY SELECTED" font "gui/fonts/sdf_MetronBook24" "exact text" 1 "exact text size" 18 "text halign" center "text valign" center color 0.91 0.82 0.62 1 }
+   }
+  }
+  ButtonWidgetClass Sell {  position 0.695 0.72 size 0.27 0.055 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 visible 1 text ""    
+   {
+    PanelWidgetClass SellSurface { position 0 0 size 1 1 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 color 0.14 0.12 0.085 0.96 style DayZDefaultPanel }
+    TextWidgetClass SellCaption { position 0.02 0.1 size 0.96 0.8 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 text "SELECT AN ITEM TO SELL" font "gui/fonts/sdf_MetronBook24" "exact text" 1 "exact text size" 18 "text halign" center "text valign" center color 0.91 0.82 0.62 1 }
+   }
+  }
+  ImageWidgetClass Emblem { position 0.025 0.84 size 0.05 0.1 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 color 1 1 1 1 image0 "Humans/gui/textures/horizon_exchange_logo_ca.paa" stretch 1 mode blend "src alpha" 1 }
+  TextWidgetClass Brand { position 0.09 0.835 size 0.28 0.045 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 text "HORIZON EXCHANGE" font "gui/fonts/sdf_MetronBook24" "exact text" 1 "exact text size" 20 color 0.88 0.89 0.85 1 }
+  TextWidgetClass Money { position 0.09 0.9 size 0.3 0.055 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 text "Money: $0" font "gui/fonts/sdf_MetronBook24" "exact text" 1 "exact text size" 22 color 0.83 0.73 0.52 1 }
+  MultilineTextWidgetClass Status { position 0.4 0.835 size 0.565 0.075 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 wrap 1 text "Trade what you carry. Take what you need." font "gui/fonts/sdf_MetronBook24" "exact text" 1 "exact text size" 18 color 0.9 0.9 0.87 1 }
+  ButtonWidgetClass Refresh {  position 0.65 0.88 size 0.15 0.045 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 text ""   
+   {
+    PanelWidgetClass RefreshSurface { position 0 0 size 1 1 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 color 0.14 0.12 0.085 0.96 style DayZDefaultPanel }
+    TextWidgetClass RefreshCaption { position 0.02 0.1 size 0.96 0.8 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 text "REFRESH" font "gui/fonts/sdf_MetronBook24" "exact text" 1 "exact text size" 18 "text halign" center "text valign" center color 0.91 0.82 0.62 1 }
+   }
+  }
+  ButtonWidgetClass Close {  position 0.81 0.88 size 0.15 0.045 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 text ""   
+   {
+    PanelWidgetClass CloseSurface { position 0 0 size 1 1 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 color 0.14 0.12 0.085 0.96 style DayZDefaultPanel }
+    TextWidgetClass CloseCaption { position 0.02 0.1 size 0.96 0.8 hexactpos 0 vexactpos 0 hexactsize 0 vexactsize 0 ignorepointer 1 text "GOODBYE" font "gui/fonts/sdf_MetronBook24" "exact text" 1 "exact text size" 18 "text halign" center "text valign" center color 0.91 0.82 0.62 1 }
+   }
+  }
+ }
+}

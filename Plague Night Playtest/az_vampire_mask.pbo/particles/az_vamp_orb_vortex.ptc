@@ -1,0 +1,104 @@
+EffectDef {
+ Emitors {
+  EmitorDef storm_core {
+   ShapeType Box
+   ShapeSize 0.2 0.2 0.2
+   ConeAngle 0 0 0
+   MaxNum 16
+   BirthRate 4
+   Material "{E296DD98B20EC17B}Graphics/Particles/materials/smoke/smoke_dust_01_em.emat"
+   SizeMultiplier 1.6
+   SizeRND 0.3
+   RandomRotDir 1
+   RotMultiplier 0.2
+   Sort 0
+   Velocity 0
+   AirResistance 0
+   GravityMultiply 0
+   Wind 0
+   LifeTime 4.0
+   LifeTimeRND 0.3
+   Color {
+    0 0.03 0 0 1 0.02 0 0
+   }
+   Alpha {
+    0 0 0.25 0.5 0.75 0.45 1 0
+   }
+   Size {
+    0 0.8 1 1.1
+   }
+   EffectTime 1
+   Repeat 1
+  }
+  EmitorDef storm_swirl {
+   ShapeType Ellipse
+   ShapeSize 3 3.2 3
+   ConeAngle 0 0 0
+   MaxNum 180
+   BirthRate 90
+   Material "{E296DD98B20EC17B}Graphics/Particles/materials/smoke/smoke_dust_01_em.emat"
+   SizeMultiplier 1.0
+   SizeRND 0.35
+   RandomRotDir 1
+   RotMultiplier 1.2
+   Sort 0
+   Velocity -2.2
+   VelocityRND 0.2
+   VelAngle 1
+   AirResistance 0
+   GravityMultiply 0
+   Wind 0
+   LifeTime 1.4
+   LifeTimeRND 0.25
+   Color {
+    0 1 0.12 0.05 0.6 0.8 0.06 0.03 1 0.25 0.01 0
+   }
+   Alpha {
+    0 0 0.15 0.6 0.7 0.45 1 0
+   }
+   Size {
+    0 1 0.7 0.6 1 0.15
+   }
+   RotationSpeed {
+    0 0.5 1 1.6
+   }
+   EffectTime 1
+   Repeat 1
+  }
+  EmitorDef storm_clots {
+   ShapeType Ellipse
+   ShapeSize 2.2 2.2 2.2
+   ConeAngle 0 0 0
+   MaxNum 180
+   BirthRate 120
+   Material "{2884C61C9A35471E}Graphics/Particles/materials/character/fluid_thick_01.emat"
+   SizeMultiplier 0.28
+   SizeRND 0.1
+   RandomAngle 1
+   StretchMultiplier 0.6
+   Sort 0
+   Velocity -2.2
+   VelocityRND 0.3
+   VelAngle 1
+   AirResistance 0
+   GravityMultiply 0
+   Wind 0
+   AnimOnce 1
+   AnimFPS 30
+   RandomFrame 1
+   LifeTime 1.2
+   LifeTimeRND 0.2
+   Color {
+    0 1 0.1 0.04 1 0.45 0.02 0.01
+   }
+   Alpha {
+    0 0 0.15 1 0.85 1 1 0
+   }
+   Size {
+    0 0.6 0.5 1 1 0.3
+   }
+   EffectTime 1
+   Repeat 1
+  }
+ }
+}

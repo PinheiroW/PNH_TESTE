@@ -1,0 +1,14 @@
+MetaFileClass {
+ Name "{1F6FAA73A6FFB9A8}azo/az_vampire_anims/anims/AZ_Vamp_Snarl_Cro.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "AZ_Vamp_Snarl_Cro.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

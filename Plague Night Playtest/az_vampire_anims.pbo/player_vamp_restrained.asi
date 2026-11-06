@@ -1,0 +1,19 @@
+$animsetinstance {
+ #template "{F0C651DE8E24A5DE}DZ/anims/workspaces/player/player_main/player_main.ast"
+ #nparents 1
+ #parent "{19DF0B912F95C07A}DZ/anims/workspaces/player/player_main/player_main_1h_restrained.asi"
+ $animations {
+   "ActionContinuous.SalineBloodBagTargetCro.In" "{C76171A57AA9113C}azo/az_vampire_anims/anims/AZ_Vamp_VictimBound_In.anm"
+   "ActionContinuous.SalineBloodBagTargetCro.Loop" "{8D1E4187B18B8CED}azo/az_vampire_anims/anims/AZ_Vamp_VictimBound_Loop.anm"
+   "ActionContinuous.SalineBloodBagTargetCro.Out" "{47FC6E8CB46AE156}azo/az_vampire_anims/anims/AZ_Vamp_VictimBound_Out.anm"
+   "ActionContinuous.SalineBloodBagTargetErc.In" "{C76171A57AA9113C}azo/az_vampire_anims/anims/AZ_Vamp_VictimBound_In.anm"
+   "ActionContinuous.SalineBloodBagTargetErc.Loop" "{8D1E4187B18B8CED}azo/az_vampire_anims/anims/AZ_Vamp_VictimBound_Loop.anm"
+   "ActionContinuous.SalineBloodBagTargetErc.Out" "{47FC6E8CB46AE156}azo/az_vampire_anims/anims/AZ_Vamp_VictimBound_Out.anm"
+   "ActionContinuous.SalineBloodBagCro.In" "{F4769EE1D2595753}azo/az_vampire_anims/anims/AZ_Vamp_RearVictimBound_In.anm"
+   "ActionContinuous.SalineBloodBagCro.Loop" "{53345174FF2E136B}azo/az_vampire_anims/anims/AZ_Vamp_RearVictimBound_Loop.anm"
+   "ActionContinuous.SalineBloodBagCro.Out" "{3D4581180F305BD2}azo/az_vampire_anims/anims/AZ_Vamp_RearVictimBound_Out.anm"
+   "ActionContinuous.SalineBloodBagErc.In" "{F4769EE1D2595753}azo/az_vampire_anims/anims/AZ_Vamp_RearVictimBound_In.anm"
+   "ActionContinuous.SalineBloodBagErc.Loop" "{53345174FF2E136B}azo/az_vampire_anims/anims/AZ_Vamp_RearVictimBound_Loop.anm"
+   "ActionContinuous.SalineBloodBagErc.Out" "{3D4581180F305BD2}azo/az_vampire_anims/anims/AZ_Vamp_RearVictimBound_Out.anm"
+ }
+}

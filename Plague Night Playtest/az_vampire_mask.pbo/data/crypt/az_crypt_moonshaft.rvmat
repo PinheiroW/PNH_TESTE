@@ -1,0 +1,13 @@
+ambient[] = {0, 0, 0, 1};
+diffuse[] = {0, 0, 0, 1};
+forcedDiffuse[] = {0, 0, 0, 1};
+emmisive[] = {1.2, 1.2, 1.2, 1};
+specular[] = {0, 0, 0, 1};
+specularPower = 1;
+renderFlags[] =
+{
+    "NoReceiveShadow",
+    "AddBlend"
+};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

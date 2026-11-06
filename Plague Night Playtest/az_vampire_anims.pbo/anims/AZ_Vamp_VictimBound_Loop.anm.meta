@@ -1,0 +1,14 @@
+MetaFileClass {
+ Name "{8D1E4187B18B8CED}azo/az_vampire_anims/anims/AZ_Vamp_VictimBound_Loop.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "AZ_Vamp_VictimBound_Loop.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

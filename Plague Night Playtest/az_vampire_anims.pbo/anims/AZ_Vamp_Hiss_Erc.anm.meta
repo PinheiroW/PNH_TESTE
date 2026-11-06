@@ -1,0 +1,14 @@
+MetaFileClass {
+ Name "{353BBE5779A837BD}azo/az_vampire_anims/anims/AZ_Vamp_Hiss_Erc.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "AZ_Vamp_Hiss_Erc.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

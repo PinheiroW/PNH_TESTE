@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modded_inputs>
+ <inputs><actions><input name="UAHumanTraderTalk" loc="Humans: Talk to trader" /></actions>
+ <sorting name="Humans" loc="Humans"><input name="UAHumanTraderTalk" /></sorting></inputs>
+ <preset><input name="UAHumanTraderTalk"><btn name="kF" /></input></preset>
+</modded_inputs>

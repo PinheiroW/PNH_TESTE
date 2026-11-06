@@ -1,0 +1,108 @@
+EffectDef {
+ Emitors {
+  EmitorDef ash_cloud {
+   ShapeType Box
+   ShapeSize 0.55 1.3 0.4
+   ConeAngle 360 0 90
+   MaxNum 100
+   BirthRate 150
+   Material "{67FEB95AE2ECC2EA}Graphics/Particles/materials/smoke/smoke_dust_01.emat"
+   SizeMultiplier 1.1
+   SizeRND 0.25
+   RandomRotDir 1
+   RotMultiplier 25
+   RandomAngle 0
+   Sort 0
+   Velocity 1.2
+   VelocityRND 0.4
+   AirResistance 1.5
+   GravityMultiply 0.12
+   Wind 0
+   RandomFrame 1
+   LifeTime 2.3
+   LifeTimeRND 0.4
+   Color {
+    0 0.6 0.59 0.57 1 0.36 0.35 0.34
+   }
+   Alpha {
+    0 0 0.08 0.8 0.5 0.5 1 0
+   }
+   Size {
+    0 0.3 0.35 1 1 1.5
+   }
+   EffectTime 0.6
+   Repeat 0
+   BRateMast {
+    0 1 0.2 1 1 0
+   }
+  }
+  EmitorDef ash_heavy {
+   ShapeType Box
+   ShapeSize 0.5 1.3 0.4
+   ConeAngle 360 0 60
+   MaxNum 64
+   BirthRate 80
+   Material "{67FEB95AE2ECC2EA}Graphics/Particles/materials/smoke/smoke_dust_01.emat"
+   SizeMultiplier 0.09
+   SizeRND 0.04
+   RandomRotDir 1
+   RotMultiplier 15
+   RandomAngle 0
+   Sort 0
+   Velocity 0.65
+   VelocityRND 0.35
+   AirResistance 1.5
+   GravityMultiply 0.35
+   Wind 0
+   AnimOnce 0
+   AnimFPS 30
+   RandomFrame 1
+   LifeTime 1.5
+   LifeTimeRND 0.3
+   Color {
+    0 0.25 0.23 0.21 1 0.16 0.15 0.14
+   }
+   Alpha {
+    0 0 0.08 0.9 0.7 0.65 1 0
+   }
+   Size {
+    0 0.8 0.5 1 1 0.4
+   }
+   EffectTime 0.7
+   Repeat 0
+   BRateMast {
+    0 0.5 0.15 1 0.7 0.5 1 0
+   }
+  }
+  EmitorDef ember_scatter {
+   ShapeType Box
+   ShapeSize 0.3 0.9 0.25
+   ConeAngle 360 0 80
+   MaxNum 56
+   BirthRate 120
+   Material "{0B22CDEBF6A47216}Graphics/Particles/materials/fire/sparks_04.emat"
+   SizeMultiplier 0.03
+   SizeRND 0.01
+   StretchMultiplier 1
+   Sort 0
+   Velocity 2.5
+   VelocityRND 1.5
+   AirResistance 1.5
+   GravityMultiply 0.5
+   Wind 0
+   LifeTime 1.6
+   LifeTimeRND 0.6
+   Color {
+    0 1 0.7 0.25 1 0.8 0.15 0.04
+   }
+   Alpha {
+    0 0 0.05 0.7 0.5 0.35 1 0
+   }
+   EffectTime 0.4
+   Repeat 0
+   BRateMast {
+    0 1 0.2 1 1 0
+   }
+  }
+ }
+}
