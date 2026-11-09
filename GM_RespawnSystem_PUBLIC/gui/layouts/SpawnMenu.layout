@@ -1,0 +1,355 @@
+FrameWidgetClass SpawnSelectRoot {
+ position 0 0
+ size 1.001 1.001
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  ImageWidgetClass Background {
+   visible 1
+   inheritalpha 0
+   ignorepointer 1
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   imageTexture "GM_RespawnSystem_PUBLIC/gui/edds/Background.edds"
+   mode blend
+   "src alpha" 1
+   "clamp mode" wrap
+   "stretch mode" stretch_w_h
+  }
+  PanelWidgetClass LeftPanel {
+   visible 1
+   ignorepointer 1
+   size 960 872
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   {
+    ImageWidgetClass Left_over {
+     ignorepointer 1
+     size 960 792
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     imageTexture "GM_RespawnSystem_PUBLIC/gui/edds/left_over.edds"
+     "src alpha" 1
+     "clamp mode" wrap
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass Left_on {
+     ignorepointer 1
+     size 960 792
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     imageTexture "GM_RespawnSystem_PUBLIC/gui/edds/left_on.edds"
+     "src alpha" 1
+     "clamp mode" wrap
+     "stretch mode" stretch_w_h
+    }
+    ButtonWidgetClass BtnRandom {
+     size 1 1
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+    }
+   }
+  }
+  PanelWidgetClass RightPanel {
+   ignorepointer 1
+   size 960 872
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   {
+    ImageWidgetClass Right_over {
+     ignorepointer 1
+     size 960 792
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     imageTexture "GM_RespawnSystem_PUBLIC/gui/edds/right_over.edds"
+     "src alpha" 1
+     "clamp mode" wrap
+     "stretch mode" stretch_w_h
+    }
+    ImageWidgetClass Right_on {
+     ignorepointer 1
+     size 960 792
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     imageTexture "GM_RespawnSystem_PUBLIC/gui/edds/right_on.edds"
+     "src alpha" 1
+     "clamp mode" wrap
+     "stretch mode" stretch_w_h
+    }
+    ButtonWidgetClass BtnHome {
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+    }
+   }
+  }
+  PanelWidgetClass SpawnMenuPanel {
+   visible 1
+   ignorepointer 1
+   position 0 0.12
+   size 1 0.144
+   halign center_ref
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style blank
+   {
+    GridSpacerWidgetClass GridSpacerWidget0 {
+     visible 1
+     ignorepointer 1
+     size 1 1
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     "Size To Content H" 1
+     Rows 1
+     {
+      PanelWidgetClass PanelWidget0 {
+       ignorepointer 1
+       size 0.475 0.45
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       {
+        GridSpacerWidgetClass GridSpacerWidget1 {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         "Size To Content V" 1
+         Columns 1
+         Rows 2
+         {
+          PanelWidgetClass PanelWidget3 {
+           ignorepointer 1
+           size 0.113 0.35
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           {
+            TextWidgetClass SpawnRandom1 {
+             ignorepointer 1
+             size 0.99 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             text "STR_SURVIVE_LIGHT"
+             font "GM_RespawnSystem_PUBLIC/gui/fonts/GHOTIC24"
+             "exact text" 1
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+          PanelWidgetClass PanelWidget4 {
+           ignorepointer 1
+           size 0.113 0.65
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           {
+            RichTextWidgetClass RichTextWidget0 {
+             ignorepointer 1
+             color 0.647 0.647 0.647 1
+             size 1 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             text "STR_LIGHT_DESC"
+             font "GM_RespawnSystem_PUBLIC/gui/fonts/GHOTIC16"
+             "text color" 0.557 0.557 0.557 1
+             "exact text" 1
+             "size to text h" 1
+             "size to text v" 0
+             "text halign" center
+             wrap 1
+             "condense whitespace" 1
+             "strip newlines" 1
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass PanelWidget1 {
+       ignorepointer 1
+       size 0.05 0.05
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+      }
+      PanelWidgetClass PanelWidget2 {
+       ignorepointer 1
+       size 0.475 0.45
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       {
+        GridSpacerWidgetClass GridSpacerWidget2 {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         "Size To Content V" 1
+         Columns 1
+         Rows 2
+         {
+          PanelWidgetClass PanelWidget5 {
+           ignorepointer 1
+           color 0.38 0.38 0.38 1
+           size 0.113 0.35
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           {
+            TextWidgetClass SpawnRandom0 {
+             ignorepointer 1
+             size 0.99 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             text "STR_SURVIVE_HARD"
+             font "GM_RespawnSystem_PUBLIC/gui/fonts/GHOTIC24"
+             "exact text" 1
+             "text halign" center
+             "text valign" center
+            }
+           }
+          }
+          PanelWidgetClass PanelWidget6 {
+           ignorepointer 1
+           color 0.38 0.38 0.38 1
+           size 0.113 0.65
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 0
+           vexactsize 0
+           {
+            RichTextWidgetClass RichTextWidget1 {
+             ignorepointer 1
+             color 0.647 0.647 0.647 1
+             size 1 1
+             halign center_ref
+             valign center_ref
+             hexactpos 1
+             vexactpos 1
+             hexactsize 0
+             vexactsize 0
+             text "#STR_HARD_DESC"
+             font "GM_RespawnSystem_PUBLIC/gui/fonts/GHOTIC16"
+             "exact text" 1
+             "size to text h" 1
+             "size to text v" 0
+             "text halign" center
+             wrap 1
+             "condense whitespace" 1
+             "strip newlines" 1
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  RichTextWidgetClass MenuDescription {
+   visible 1
+   ignorepointer 1
+   color 0.647 0.647 0.647 1
+   position 0 0.01
+   size 0.7 0.094
+   halign center_ref
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   text "#STR_DESCRIPTION_MENU"
+   font "GM_RespawnSystem_PUBLIC/gui/fonts/GHOTIC16"
+   "exact text" 1
+   "size to text h" 1
+   "size to text v" 0
+   "text halign" center
+   wrap 1
+   "condense whitespace" 1
+   "strip newlines" 1
+  }
+ }
+}
